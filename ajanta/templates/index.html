@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+
+        <div class="cointanier">
+            <input placeholder="Search Here" type="text" name="search">
+            <button type="submit">Submit</button>
+
+        </div>
+    <h1>WELCOME TO HIMANSHU DICTONARY</h1>
+    <h2>
+        Meanings-
+    </h2>
+    <h3>
+        {{data}}
+    </h3>
+    <h2>
+        Synonyms-
+    </h2>
+    <h3>
+        {{synonyms}}
+    </h3>
+
+    </form>
+</body>
+</html>
